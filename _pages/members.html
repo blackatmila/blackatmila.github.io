@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Members"
+permalink: /members/
+author_profile: true
+---
+
+This page showcases the members and alumni of the Black at Mila community. Our members include researchers, students, and professionals who are actively contributing to the field of AI at Mila, as well as alumni who have made significant contributions during their time at Mila.
+
+{% include base_path %}
+
+<h2 id="current-members" class="archive__subtitle">Current Members</h2>
+
+{% for post in site.members %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2 id="alumni" class="archive__subtitle">Alumni</h2>
+
+{% for post in site.alumni %}
+  {% include archive-single.html %}
+{% endfor %}
