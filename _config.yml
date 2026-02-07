@@ -238,6 +238,9 @@ collections:
   alumni:
     output: true
     permalink: /:collection/:path/
+  team:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -308,6 +311,15 @@ defaults:
   - scope:
       path: ""
       type: alumni
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _team
+  - scope:
+      path: ""
+      type: team
     values:
       layout: single
       author_profile: true
