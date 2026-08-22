@@ -11,18 +11,16 @@ This page showcases the members and alumni of the Black at Mila community. Our m
 
 <h2 id="team" class="archive__subtitle">Team</h2>
 
+<ul>
 {% for post in site.team %}
-  {% include archive-single.html %}
+  <li>{{ post.title }}</li>
 {% endfor %}
-
-<h2 id="current-members" class="archive__subtitle">Current Members</h2>
-
-{% for post in site.members %}
-  {% include archive-single.html %}
-{% endfor %}
+</ul>
 
 <h2 id="alumni" class="archive__subtitle">Alumni</h2>
 
+<ul>
 {% for post in site.alumni %}
-  {% include archive-single.html %}
+  <li>{{ post.title }}</li>
 {% endfor %}
+</ul>
